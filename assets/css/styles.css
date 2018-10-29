@@ -228,3 +228,85 @@ body {
   background-color:#bccaec;
 }
 
+#navbar-novice {
+}
+
+#navbar-novice {
+  background-color:black;
+}
+
+#cake-details-div {
+  text-align:center;
+  background-color:rgb(200,246,243);
+}
+
+#details-body {
+  background-image:red;
+}
+
+@media (min-width: 992px) {
+  #img-size {
+    width:500px;
+    height:400px;
+  }
+}
+
+#img-size {
+  height:400px;
+  width:500px;
+}
+
+#list {
+  font-weight:bold;
+}
+
+#ingidients-heading {
+  text-align:center;
+}
+
+#list {
+  padding-left:100px;
+  width:300px;
+}
+
+#list2 {
+  padding-left:100px;
+  width:300px;
+}
+
+#price {
+  text-align:center;
+}
+
+#price-span {
+  color:red;
+}
+
+.container-main {
+  margin-top:90px;
+}
+
+.order-div {
+  width:600px;
+  height:50px;
+  /*margin-left:100px;*/
+  text-align:center;
+}
+
+.mother-div {
+  text-align:center;
+}
+
+.order-button {
+  margin-left:150px;
+}
+
+.list {
+  font-weight:bold;
+  margin-left:250px;
+}
+
+#ingridients-div {
+  background-color:rgb(237,177,177);
+}
+
