@@ -20,7 +20,7 @@
  <title>Jeorge's Cakes.</title>
 </head>
 
-<body id="details-body">
+<body>
     <nav class="navbar navbar-light navbar-expand-md fixed-top bg-dark">
         <div class="container-fluid"><a class="navbar-brand" href="#" id="loggo" style="color:#fef7f7;"><i class="fa fa-birthday-cake" style="color:rgb(240,12,245);font-size:42px;"></i><strong>&nbsp;George's Cake Factory.</strong></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -34,40 +34,39 @@
             </div>
         </div>
     </nav>
-    <div class="container container-main">
-        <div id="cake-details-div">
-            <h1 id="cake-name" style="color:rgb(240,12,245);"><span style="text-decoration: underline;">Cake name Details.</span></h1><img src="assets/img/wedding-cake-clipping-path-picture-id171336145.jpg" class="rounded-circle img-fluid" id="img-size" /></div>
-        <div id="description" style="margin:20px;">
-            <p>This type of cake is best suited for the following accasions :</p>
-            <p style="margin:0px 0px 0px;">Weddings&nbsp;</p>
-            <p style="margin:0px 0px 0px;">Birthdays&nbsp;</p>
-            <p style="margin:0px 0px 0px;">Aneversaries</p>
-            <p style="margin:0px 0px 0px;">Special Occasions.</p>
-        </div>
-        <div id="ingridients-div">
-            <h2 id="ingidients-heading">Ingridients.</h2>
-            <ul id="list" style="font-size:20px;">
-                <li>Flour &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
-                <li>Sugar &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
-                <li>Yeast &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
-                <li>Milk &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
-                <li>Butter &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
-                <li>Eggs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
-            </ul>
-        </div>
-        <div class="mother-div2" style="font-size:20px;">
-            <h1 id="price">Pricing Per Killorgram .</h1>
-            <div class="mother-div">
-                <h4><strong>1. One Kg &nbsp;</strong><span class="price-span">Ksh 300/=</span></h4>
-                <div class="order-div"><a class="btn btn-primary btn-block btn-lg order-button" role="button" href="#" style="background-color:rgb(240,12,245);"><strong>Oder Now !!!!!!</strong></a></div>
-                <h4><strong>2. Two Kgs&nbsp;</strong><span class="price-span">Ksh 600/=</span></h4>
-                <div class="order-div"><a class="btn btn-primary btn-block btn-lg order-button" role="button" href="#" style="background-color:rgb(240,12,245);"><strong>Oder Now !!!!!!</strong></a></div>
-                <h4><strong>3. Three Kgs&nbsp;</strong><span class="price-span">Ksh 900/=</span></h4>
-                <div class="order-div"><a class="btn btn-primary btn-block btn-lg order-button" role="button" href="#" style="background-color:rgb(240,12,245);"><strong>Oder Now !!!!!!</strong></a></div>
-                <h4><strong>4. Four Kgs&nbsp;</strong><span class="price-span">Ksh 1200/=</span></h4>
-                <div class="order-div"><a class="btn btn-primary btn-block btn-lg order-button" role="button" href="#" style="background-color:rgb(240,12,245);"><strong>Oder Now !!!!!!</strong></a></div>
+    <div class="container">
+        <h1 class="heads" style="color:rgb(216,7,208);"><span style="text-decoration: underline;">Fill In The Form To Make The Purchase.</span></h1>
+        <form action="purchase.php" method="post">
+            <div class="form-row">
+                <div class="col-sm-10 col-md-8 col-lg-4 col-xl-4 offset-sm-1 offset-md-2 offset-lg-0 offset-xl-0">
+                    <div class="form-group"><label style="font-size:20px;"><strong>First Name:</strong></label><input class="form-control" type="text" required="" placeholder="First Name" name="fname"></div>
+                </div>
+                <div class="col-sm-10 col-md-8 col-lg-4 col-xl-4 offset-sm-1 offset-md-2 offset-lg-0 offset-xl-0">
+                    <div class="form-group" name="lname"><label style="font-size:20px;"><strong>Second Name:</strong></label><input class="form-control" type="text" required="" placeholder="Second Name "></div>
+                </div>
+                <div class="col-sm-10 col-md-8 col-lg-4 col-xl-4 offset-sm-1 offset-md-2 offset-lg-0 offset-xl-0">
+                    <div class="form-group"><label style="font-size:20px;"><strong>Last Name:</strong></label><input class="form-control" type="text" required="" placeholder="Last Name " name="lname"></div>
+                </div>
             </div>
-        </div>
+            <div class="form-row">
+                <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6 offset-sm-1 offset-md-2 offset-lg-3 offset-xl-3">
+                    <div class="form-group"><label style="font-size:20px;"><strong>Email Address :</strong></label><input class="form-control" type="email" required="" placeholder="Email Address "></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6 offset-sm-1 offset-md-2 offset-lg-3 offset-xl-3">
+                    <div class="form-group"><label style="font-size:20px;"><strong>Phone Number :</strong></label><input class="form-control" type="text" name="phone" placeholder="Phone  Number"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6 offset-sm-1 offset-md-2 offset-lg-3 offset-xl-3">
+                    <div class="form-group">
+                        <p><input type="radio" name="radio" value="home">Paragraph</p>
+                        <p><input type="radio" name="radio" value="home">Paragraph</p>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
     <div class="footer-clean">
         <footer>
@@ -76,9 +75,9 @@
                     <div class="col item">
                         <h2>Services</h2>
                         <ul>
-                            <li><a href="services.html/#birthday_cake" style="font-size:20px;color:rgb(32,51,223);"><strong>Birthday Cakes</strong></a></li>
-                            <li><a href="services.html" style="font-size:20px;color:rgb(19,41,237);"><strong>Weeding Cakes.</strong></a></li>
-                            <li><a href="services.html" style="font-size:20px;color:rgb(19,41,237);"><strong>Annevasary Cakes .</strong></a></li>
+                            <li><a href="cakes&amp;pastries.html" style="font-size:20px;color:rgb(32,51,223);"><strong>Birthday Cakes</strong></a></li>
+                            <li><a href="cakes&amp;pastries.html" style="font-size:20px;color:rgb(19,41,237);"><strong>Weeding Cakes.</strong></a></li>
+                            <li><a href="cakes&amp;pastries.html" style="font-size:20px;color:rgb(19,41,237);"><strong>Annevasary Cakes .</strong></a></li>
                         </ul>
                     </div>
                     <div class="col-12 item social"><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-phone"></i></a><a href="https://mail.com/login"
