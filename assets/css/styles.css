@@ -347,3 +347,9 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  #cake-name {
+    font-size:25px;
+  }
+}
+
