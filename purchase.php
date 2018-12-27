@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <base href = "http://localhost/Bakery_Site/">
+    <link rel="shortcut  icon" href="Favicon.png" type="image/x-icon" />
  <title>Jeorge's Cakes.</title>
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md fixed-top bg-dark">
-        <div class="container-fluid"><a class="navbar-brand" href="#" id="loggo" style="color:#fef7f7;"><i class="fa fa-birthday-cake" style="color:rgb(240,12,245);font-size:42px;"></i><strong>&nbsp;George's Cake Factory.</strong></a><button class="navbar-toggler" data-toggle="collapse"
+        <div class="container-fluid"><a class="navbar-brand" href="index.html" id="loggo" style="color:#fef7f7;"><i class="fa fa-birthday-cake" style="color:rgb(240,12,245);font-size:42px;"></i><strong>&nbsp;George's Cake Factory.</strong></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
