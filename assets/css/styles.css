@@ -384,11 +384,36 @@ body {
 
 #offerDiv {
   padding-bottom:30px;
+  margin-bottom:50px;
 }
 
 @media (max-width: 568px) {
   #bar {
     font-size:13px;
   }
+}
+
+@media (max-width: 568px) {
+  #heading {
+    font-size:25px;
+  }
+}
+
+.offerPrice {
+  font-family:"monotype corsive";
+  text-align:center;
+  padding-top:25px;
+  color:rgb(255,20,125);
+  text-decoration:underline;
+  font-style:italic;
+}
+
+@media (max-width: 568px) {
+  .offerPrice {
+    font-size:20px;
+  }
+}
+
+#contact-heading {
 }
 

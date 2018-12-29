@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/Bold-BS4-Cards-with-Hover-Effect-501.css">
     <link rel="stylesheet" href="assets/css/Bold-BS4-Cards-with-Hover-Effect-92.css">
     <link rel="stylesheet" href="assets/css/Bold-BS4-Cards-with-Hover-Effect-921.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-v2-Modal--Full-with-Google-Map.css">
     <link rel="stylesheet" href="assets/css/Contact-FormModal-Contact-Form-with-Google-Map.css">
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Header-Blue.css">
@@ -25,6 +26,9 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
     <link rel="stylesheet" href="assets/css/Pretty-Carousel-Fade--TouchSwipe.css">
+    <link rel="stylesheet" href="assets/css/s-product-catalog.css">
+    <link rel="stylesheet" href="assets/css/s-product-catalog1.css">
+    <link rel="stylesheet" href="assets/css/s-product-catalog2.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Testimonials.css">
  <title>Jeorge's Cakes Facrory.</title>
@@ -47,64 +51,148 @@
     <div class="main-box">
         <h2 class="head" style="color:rgb(240,12,245);">We Appreciate customer feedback.</h2>
         <h3 class="head-1">Leave us a comment below.</h3>
-        <div class="container">
+        <div>
+            <div class="container-fluid">
+                <h3 id="contact-heading">Contact Information</h3>
+                <hr>
+                <form action="contacts.php" method="post" id="contactForm"><input class="form-control" type="hidden" name="Introduction" value="This email was sent from www.awebsite.com"><input class="form-control" type="hidden" name="subject" value="Awebsite.com Contact Form"><input class="form-control" type="hidden"
+                        name="to" value="email@awebsite.com">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div id="successfail"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-12 col-md-6" id="message">
+                            <h2 class="h4"><i class="fa fa-envelope"></i> Contact Us<small><small class="required-input">&nbsp;(*required)</small></small>
+                            </h2>
+                            <div class="form-group"><label for="from-name">Name</label><span class="required-input">*</span>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user-o"></i></span></div><input class="form-control" type="text" name="name" required="" placeholder="Full Name" id="from-name"></div>
+                            </div>
+                            <div class="form-group"><label for="from-email">Email</label><span class="required-input">*</span>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-envelope-o"></i></span></div><input class="form-control" type="text" name="email" required="" placeholder="Email Address" id="from-email"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                    <div class="form-group"><label for="from-phone">Phone</label><span class="required-input">*</span>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone"></i></span></div><input class="form-control" type="text" name="phone" required="" placeholder="Primary Phone" id="from-phone"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                    <div class="form-group"><label for="from-calltime">Best Time to Call</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></div><select class="form-control" name="callTime" id="from-calltime"><optgroup label="Best Time to Call"><option value="Morning" selected="">Morning</option><option value="Afternoon">Afternoon</option><option value="Evening">Evening</option></optgroup></select></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group"><label for="from-comments">Comments</label><textarea class="form-control" rows="5" name="comments" placeholder="Enter Comments" id="from-comments"></textarea></div>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="col"><button class="btn btn-primary btn-block" type="reset"><i class="fa fa-undo"></i> Reset</button></div>
+                                    <div class="col"><button class="btn btn-primary btn-block" type="submit">Submit <i class="fa fa-chevron-circle-right"></i></button></div>
+                                </div>
+                            </div>
+                            <hr class="d-flex d-md-none">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h2 class="h4"><i class="fa fa-location-arrow"></i> Locate Us</h2>
+                            <div class="form-row">
+                                <div class="col-12">
+                                    <div class="static-map"><a href="https://www.google.com/maps/d/viewer?hl=en&amp;ie=UTF8&amp;msa=0&amp;ll=-1.2881299999999938%2C36.81876399999999&amp;spn=0.017162%2C0.017166&amp;z=15&amp;source=embed&amp;mid=1g4PdToH5MCyPsVwcQ30KY5COYzc" target="_blank"
+                                            rel="noopener"> <img class="img-fluid" src="http://maps.googleapis.com/maps/api/staticmap?autoscale=2&amp;size=600x210&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C582+1801+W+International+Speedway+Blvd+Daytona+Beach+FL+32114&amp;zoom=12" alt="Google Map of Daytona International Speedway"></a></div>
+                                </div>
+                                <div class="col-sm-6 col-md-12 col-lg-6">
+                                    <h2 class="h4"><i class="fa fa-user"></i> Our Info</h2>
+                                    <div><span><strong>Name</strong></span></div>
+                                    <div><span>comments@jeorgescakehous.tk</span></div>
+                                    <div><span>www.jeorgescakehous.com</span></div>
+                                    <hr class="d-sm-none d-md-block d-lg-none">
+                                </div>
+                                <div class="col-sm-6 col-md-12 col-lg-6">
+                                    <h2 class="h4"><i class="fa fa-location-arrow"></i> Our Address</h2>
+                                    <div><span><strong>&nbsp;Jeorge's Cake House .</strong></span></div>
+                                    <div><span>School Of Aviation Biulding Opposite archives</span></div>
+                                    <div><span>Ground Floor</span></div>
+                                    <div><abbr data-toggle="tooltip" data-placement="top" title="Office Phone: 555-867-5309">O:</abbr> 555-867-5309</div>
+                                    <hr class="d-sm-none">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
             <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4>Contact Information</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                            <h4 class="modal-title">Contact Information</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                         <div class="modal-body">
-                            <form action="javascript:void();" method="get" id="contactForm"><input class="form-control" type="hidden" name="Introduction" value="This email was sent from www.mywebsite.com"><input class="form-control" type="hidden" name="subject" value="My Contact Form"><input class="form-control" type="hidden"
-                                    name="to" value="email@mywebsite.com">
+                            <form action="javascript:void(0);" method="get" id="contactForm"><input class="form-control" type="hidden" name="Introduction" value="This email was sent from www.awebsite.com"><input class="form-control" type="hidden" name="subject" value="Awebsite.com Contact Form"><input class="form-control"
+                                    type="hidden" name="to" value="email@awebsite.com">
                                 <div class="form-row">
                                     <div class="col-md-6">
-                                        <div id="modal-successfail"></div>
+                                        <div id="successfail"></div>
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="col-md-6" id="modal-message">
-                                        <fieldset>
-                                            <legend><i class="fa fa-envelope"></i> Contact Us</legend>
-                                        </fieldset>
-                                        <div class="form-group has-feedback"><label for="modal_from_name">Name</label><input class="form-control" type="text" name="from_name" required="" placeholder="Full Name" id="modal_from_name" tabindex="-1"></div>
-                                        <div class="form-group has-feedback"><label for="modal_from_email">Email</label><input class="form-control" type="email" name="from_email" required="" placeholder="Email Address" id="modal_from_email"></div>
+                                    <div class="col-12 col-md-6" id="message">
+                                        <h2 class="h4"><i class="fa fa-envelope"></i> Contact Us<small><small class="required-input">&nbsp;(*required)</small></small>
+                                        </h2>
+                                        <div class="form-group"><label for="from-name">Name</label><span class="required-input">*</span>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user-o"></i></span></div><input class="form-control" type="text" name="name" required="" placeholder="Full Name" id="from-name"></div>
+                                        </div>
+                                        <div class="form-group"><label for="from-email">Email</label><span class="required-input">*</span>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-envelope-o"></i></span></div><input class="form-control" type="text" name="email" required="" placeholder="Email Address" id="from-email"></div>
+                                        </div>
                                         <div class="form-row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group has-feedback"><label for="modal_from_phone">Phone</label><input class="form-control" type="text" name="from_phone" placeholder="Primary Phone" id="modal_from_phone"></div>
+                                            <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                                <div class="form-group"><label for="from-phone">Phone</label><span class="required-input">*</span>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone"></i></span></div><input class="form-control" type="text" name="phone" required="" placeholder="Primary Phone" id="from-phone"></div>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group"><label for="modal_calltime">Best Time to Call</label><select class="form-control" name="Call Time" id="modal_calltime"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
+                                            <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                                <div class="form-group"><label for="from-calltime">Best Time to Call</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></div><select class="form-control" name="call time" id="from-calltime"><optgroup label="Best Time to Call"><option value="Morning" selected="">Morning</option><option value="Afternoon">Afternoon</option><option value="Evening">Evening</option></optgroup></select></div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-group"><label for="modal_comments">Comments</label><textarea class="form-control" rows="5" name="Comments" placeholder="Enter comments here" id="modal_comments"></textarea></div>
-                                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Send <i class="fa fa-chevron-circle-right"></i></button></div>
-                                        <hr>
+                                        <div class="form-group"><label for="from-comments">Comments</label><textarea class="form-control" rows="5" name="comments" placeholder="Enter Comments" id="from-comments"></textarea></div>
+                                        <div class="form-group">
+                                            <div class="form-row">
+                                                <div class="col"><button class="btn btn-primary btn-block" type="reset"><i class="fa fa-undo"></i> Reset</button></div>
+                                                <div class="col"><button class="btn btn-primary btn-block" type="submit">Submit <i class="fa fa-chevron-circle-right"></i></button></div>
+                                            </div>
+                                        </div>
+                                        <hr class="d-flex d-md-none">
                                     </div>
-                                    <div class="col-md-6">
-                                        <fieldset>
-                                            <legend> <i class="fa fa-location-arrow"></i> Locate Us</legend>
-                                        </fieldset>
+                                    <div class="col-12 col-md-6">
+                                        <h2 class="h4"><i class="fa fa-location-arrow"></i> Locate Us</h2>
                                         <div class="form-row">
-                                            <div class="col-md-12">
-                                                <div class="static-map"><a href="https://www.google.com/maps/place/2+15th+St+NW+Washington+DC+20024" target="_blank"><img class="img-fluid" src="http://maps.googleapis.com/maps/api/staticmap?autoscale=2&amp;size=600x210&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C582+1801+W+International+Speedway+Blvd+Daytona+Beach+FL+32114&amp;zoom=12" alt="Google Map of Washington Monument"></a></div>
+                                            <div class="col-12">
+                                                <div class="static-map"><a href="https://www.google.com/maps/place/Daytona+International+Speedway/@29.1815062,-81.0744275,15z/data=!4m13!1m7!3m6!1s0x88e6d935da1cced3:0xa6b3e1bc0f2fc83a!2s1801+W+International+Speedway+Blvd,+Daytona+Beach,+FL+32114!3b1!8m2!3d29.187028!4d-81.0703076!3m4!1s0x88e6d949a4cb8593:0x1387c6c0b5c8cc97!8m2!3d29.1851681!4d-81.0705292"
+                                                        target="_blank" rel="noopener"> <img class="img-fluid" src="http://maps.googleapis.com/maps/api/staticmap?autoscale=2&amp;size=600x210&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C582+1801+W+International+Speedway+Blvd+Daytona+Beach+FL+32114&amp;zoom=12" alt="Google Map of Daytona International Speedway"></a></div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <fieldset>
-                                                    <legend><i class="fa fa-envelope"></i> Contact Us</legend>
-                                                </fieldset>
+                                            <div class="col-sm-6 col-md-12 col-lg-6">
+                                                <h2 class="h4"><i class="fa fa-user"></i> Our Info</h2>
                                                 <div><span><strong>Name</strong></span></div>
-                                                <div><span>email@address.com</span></div>
+                                                <div><span>email@awebsite.com</span></div>
                                                 <div><span>www.awebsite.com</span></div>
-                                                <hr>
+                                                <hr class="d-sm-none d-md-block d-lg-none">
                                             </div>
-                                            <div class="col-sm-6">
-                                                <fieldset>
-                                                    <legend><i class="fa fa-location-arrow"></i> Our Address</legend>
-                                                </fieldset>
+                                            <div class="col-sm-6 col-md-12 col-lg-6">
+                                                <h2 class="h4"><i class="fa fa-location-arrow"></i> Our Address</h2>
                                                 <div><span><strong>Office Name</strong></span></div>
-                                                <div><span>55 Icannot Dr.</span></div>
-                                                <div><span>Daytona Beach, FL 81500</span></div>
+                                                <div><span>55 Icannot Dr</span></div>
+                                                <div><span>Daytone Beach, FL 85150</span></div>
                                                 <div><abbr data-toggle="tooltip" data-placement="top" title="Office Phone: 555-867-5309">O:</abbr> 555-867-5309</div>
+                                                <hr class="d-sm-none">
                                             </div>
                                         </div>
                                     </div>
@@ -114,63 +202,6 @@
                     </div>
                 </div>
             </div>
-            <form action="javascript:void();" method="get"><input class="form-control" type="hidden" name="Introduction" value="This email was sent from www.mywebsite.com"><input class="form-control" type="hidden" name="subject" value="My Contact Form"><input class="form-control" type="hidden" name="to"
-                    value="email@mywebsite.com">
-                <div class="form-row">
-                    <div class="col-md-6">
-                        <div id="successfail"></div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-6">
-                        <fieldset>
-                            <legend><i class="fa fa-envelope" style="font-size:40px;color:rgb(206,37,206);"></i> Contact Us</legend>
-                        </fieldset>
-                        <div class="form-group has-feedback"><label for="from_name">Name</label><input class="form-control" type="text" name="from_name" required="" placeholder="Full Name" id="from_name" tabindex="-1"></div>
-                        <div class="form-group has-feedback"><label for="from_email">Email</label><input class="form-control" type="email" name="from_email" required="" placeholder="Email Address" id="from_email"></div>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group has-feedback"><label for="from_phone">Phone</label><input class="form-control" type="text" name="from_phone" placeholder="Primary Phone" id="from_phone"></div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group"><label for="calltime">Best Time to Call</label><select name="Call Time" class="form-control" id="calltime"><optgroup label="Select a good time ."><option value="12" selected>7:00 - 9:00 am</option><option value="13">12:00 - 2:00 pm</option><option value="14">5:00 - 8:00pm </option></optgroup></select></div>
-                            </div>
-                        </div>
-                        <div class="form-group"><label for="comments">Comments</label><textarea class="form-control" rows="5" name="Comments" placeholder="Enter comments here" id="comments"></textarea></div>
-                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Send<i class="fa fa-chevron-circle-right"></i></button></div>
-                        <hr>
-                    </div>
-                    <div class="col-md-6 left-col">
-                        <fieldset>
-                            <legend> <i class="fa fa-location-arrow" style="font-size:40px;color:rgb(206,37,206);"></i> Locate Us</legend>
-                        </fieldset>
-                        <div class="form-row">
-                            <div class="col-md-12">
-                                <div class="static-map"><a href="https://www.google.com/maps/place/2+15th+St+NW+Washington+DC+20024" target="_blank"><img class="img-fluid" src="https://www.google.com/maps/d/viewer?msa=0&mid=1dJJwXFw9T8kSJyjDxHSkXzPIPy4&ll=-1.283175850428511%2C36.78828176018715&z=14"
-    alt="Google Map of National archives." /></a></div>
-                            </div>
-                            <div class="col-sm-6">
-                                <fieldset>
-                                    <legend><i class="fa fa-envelope" style="color:rgb(206,37,206);"></i> Contact Us</legend>
-                                </fieldset>
-                                <div><span><strong>George's Cake Factory.&nbsp;</strong></span></div>
-                                <div><span>ngugigeorge697@gmail.com</span></div>
-                                <div><span>www.rosewanjirungugi.tk</span></div>
-                                <hr>
-                            </div>
-                            <div class="col-sm-6">
-                                <fieldset>
-                                    <legend><i class="fa fa-location-arrow" style="color:rgb(240,12,245);"></i> Our Address</legend>
-                                </fieldset>
-                                <div><span><strong>Odeon Round About .</strong></span></div>
-                                <div><span>Lusaka Road along Moi Avenue.</span></div>
-                                <div><span>Nairobi Aviation School</span></div>
-                                <div><abbr data-toggle="tooltip" data-placement="top" title="Office Phone: 555-867-5309">254:</abbr> 92107437</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
         </div>
     </div>
     <div class="footer-clean">
